@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,4 +13,52 @@
     {{content}}
 </body>
 
-</html>
+</html> -->
+
+
+<!DOCTYPE html>
+<html> 
+    <!-- head of html where we add external sources and metadata-->
+    <head>
+
+        <title> sleep like a baby </title>
+
+        <!-- this is our fontawesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- gridlex for our flexbox grids -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+        <!-- google font - catamaran (200,400,500,800) -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;700;800&family=Work+Sans:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet" />
+
+        <!-- this is our custom stylesheet -->
+        <link href="/style.css" rel="stylesheet" />
+
+
+
+    </head>
+    <!-- this is the body where all of your pg content goes -->
+    <body>
+
+
+        {{ content }}
+
+         <!------------ footer ------------>
+         <footer class="padded grid-spaceBetween bg-dark">
+            <div class="col-4-bottom">
+                <h2> let's <br /> <span class="featured-text">connect</span> </h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci! </p>
+            </div>
+            <div class="col-5-bottom"> 
+                <p> <strong>Call:</strong><a href="tel:#"> 04555 5555</a> </p>
+                <p> <strong>Email:</strong><a href="mailto:#"> hello@thesleep.co</a> </p>
+                <p> <strong>Store:</strong> 55 Main St, Chicago </p>
+                <p> <strong>Instagram:</strong><a href="https://www.instagram.com/thesleepco"> @thesleepco </a></p>
+            </div>
+        </footer>
+
+    </body>
+    </html>
