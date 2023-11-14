@@ -1,19 +1,15 @@
-/* 
+/*
 colors
 yellow: #ffbe00;
 navy: #192837;
  */
 
 
-
-
-
-* { 
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 /* image styles */
 
@@ -30,14 +26,13 @@ body {
     color: #192837;
 }
 
-
 .padded     { padding: 5%; }
 .padded-sm  { padding: 1rem; }
 .padded-lg  { padding: 10% }
 
-.bg-dark { 
+.bg-dark {
     background-color: #192837;
-    color: white; 
+    color: white;
 }
 .tall-50   { min-height: 50vh;  }
 .tall-60   { min-height: 60vh;  }
@@ -83,13 +78,13 @@ a:hover {
 .white-text             { color: white; }
 
 .small-text             { font-size: 1.5rem; }
-.medium-text            { 
-    font-size: 1.7rem; 
+.medium-text            {
+    font-size: 1.7rem;
     line-height: 1.1;
 }
 .big-text               { font-size: 4.5rem; }
 
-.subtitle { 
+.subtitle {
     font-size: 1.2rem;
     color:  rgb(120,120,125);
 }
@@ -106,7 +101,7 @@ a:hover {
 .font-weight-extra-bold { font-weight: 800; }
 
 .text-left      { text-align: left; }
-.text-center    { text-align: center; } 
+.text-center    { text-align: center; }
 .text-right     { text-align: right; }
 
 
@@ -130,14 +125,14 @@ footer a {
 
 /* background images */
 
-.bg-bed { background-image: url(images/the-sleep-co4.jpg); }
-.bg-pug { 
-    background-image: url(images/the-sleep-co3.jpg); 
-    background-position: 100% 64%;
+.bg-bed { background-image: url(images/2.jpg); }
+.bg-pug {
+    background-image: url(images/4.jpg);
+    background-position: 100% 20%;
 }
 .bg-pillow {
-    background-image: url(images/the-sleep-co5.jpg); 
-    background-position: 100% 12%;
+    background-image: url(images/3.jpg);
+    background-position: 100% 51%;
 }
 
 
