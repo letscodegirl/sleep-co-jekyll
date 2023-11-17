@@ -1,9 +1,10 @@
 /*
-colors
-yellow: #ffbe00;
-navy: #192837;
- */
+    Colors:
+    Yellow: #FFBE00;
+    Navy: #192B37;
+*/
 
+/* CSS RESET */
 
 * {
     padding: 0;
@@ -11,51 +12,307 @@ navy: #192837;
     box-sizing: border-box;
 }
 
-/* image styles */
 
-.bg-image {
-    background-image: url('images/the-sleep-co3.jpg');
-    background-size: cover;
-    min-height: 10rem;
+/*---------------------------- Universal styles & utility classes  --------------------------------- */
+
+
+/* Padding Utility Classes --------------------  */
+.padded-sm {
+    padding: 2.5%;
 }
 
-/* Universal styles & utility classes */
-
-body {
-    font-family: 'Catamaran', sans-serif;
-    color: #192837;
+.padded {
+    padding: 5%;
 }
 
-.padded     { padding: 5%; }
-.padded-sm  { padding: 1rem; }
-.padded-lg  { padding: 10% }
-
-.bg-dark {
-    background-color: #192837;
-    color: white;
+.padded-lg {
+    padding: 10%;
 }
-.tall-50   { min-height: 50vh;  }
-.tall-60   { min-height: 60vh;  }
-.tall-70   { min-height: 70vh;  }
-.tall-80   { min-height: 80vh;  }
-.tall-90   { min-height: 90vh;  }
-.tall-100  { min-height: 100vh; }
 
+.padded-05 {
+    padding: 0.5rem;
+}
 
-/* typography styles */
+.padded-1 {
+    padding: 1rem;
+}
 
-h2 {
-    font-size: 2.5rem;
-    line-height: 1.1;
+.padded-2 {
+    padding: 2rem;
+}
+
+.padded-t {
+    padding-top: 5%;
+}
+
+.padded-b {
+    padding-bottom: 5%;
+}
+
+.padded-l {
+    padding-left: 5%;
+}
+
+.padded-r {
+    padding-bottom: 5%;
+}
+
+.padded-tb {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.padded-lr {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.padded-t-1 {
+    padding-top: 1rem;
+}
+
+.padded-b-1 {
+    padding-bottom: 1rem;
+}
+
+.padded-l-1 {
+    padding-left: 1rem;
+}
+
+.padded-r-1 {
+    padding-bottom: 1rem;
+}
+
+.padded-t-2 {
+    padding-top: 2rem;
+}
+
+.padded-b-2 {
+    padding-bottom: 2rem;
+}
+
+.padded-l-2 {
+    padding-left: 2rem;
+}
+
+.padded-r-2 {
+    padding-bottom: 2rem;
+}
+
+.padded-t-0 {
+    padding-top: 0;
+}
+
+.padded-b-0 {
+    padding-bottom: 0;
+}
+
+.padded-l-0 {
+    padding-left: 0;
+}
+
+.padded-r-0 {
+    padding-bottom: 0;
+}
+
+/* Margin Utility Classes --------------------  */
+
+.margin-t {
+    margin-top: 5%;
+}
+
+.margin-b {
+    margin-bottom: 5%;
+}
+
+.margin-l {
+    margin-left: 5%;
+}
+
+.margin-r {
+    margin-right: 5%;
+}
+
+.margin-t-1 {
+    margin-top: 1rem;
+}
+
+.margin-b-1 {
     margin-bottom: 1rem;
 }
 
-h3 {
-    line-height: 1;
+.margin-l-1 {
+    margin-left: 1rem;
 }
 
+.margin-r-1 {
+    margin-right: 1rem;
+}
+
+.margin-t-2 {
+    margin-top: 2rem;
+}
+
+.margin-b-2 {
+    margin-bottom: 2rem;
+}
+
+.margin-l-2 {
+    margin-left: 2rem;
+}
+
+.margin-r-2 {
+    margin-right: 2rem;
+}
+
+.margin-t-0 {
+    margin-top: 0;
+}
+
+.margin-b-0 {
+    margin-bottom: 0;
+}
+
+.margin-l-0 {
+    margin-left: 0;
+}
+
+.margin-r-0 {
+    margin-right: 0;
+}
+
+.margin-tb {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.margin-lr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Minimum Height -------------------- */
+
+.tall-50 {
+    min-height: 50vh;
+}
+
+.tall-60 {
+    min-height: 60vh;
+}
+
+.tall-70 {
+    min-height: 70vh;
+}
+
+.tall-80 {
+    min-height: 80vh;
+}
+
+.tall-90 {
+    min-height: 90vh;
+}
+
+.tall-100 {
+    min-height: 100vh;
+}
+
+/* Backgrounds & Images  -------------------- */
+
+.bg-dark {
+    background-color: #192B37;
+    color: white;
+}
+
+.bg-featured {
+    background-color: #F4B525;
+}
+
+.bg-light {
+    background-color: #E3ECF2;
+}
+
+/* Image Styles */
+.bg-image {
+    background-image: url('/images/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(240, 240, 240);
+    background-position: center;
+}
+
+/* Aspect Ratio  */
+.portrait-tall {
+    padding-bottom: 175%;
+}
+
+.portrait {
+    padding-bottom: 125%;
+}
+
+.square {
+    padding-bottom: 100%;
+}
+
+.landscape {
+    padding-bottom: 66%;
+}
+
+.landscape-wide {
+    padding-bottom: 56%;
+}
+
+
+/* Background Position */
+.bg-pos-t {
+    background-position: top;
+}
+
+.bg-pos-b {
+    background-position: bottom;
+}
+
+.bg-pos-l {
+    background-position: left;
+}
+
+.bg-pos-r {
+    background-position: right;
+}
+
+
+
+/*  Typography Styles  --------------------  */
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    color: #192B37;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+
 p {
-    font-weight: 250;
+    font-weight: 200;
     line-height: 1.5;
     margin-bottom: 1rem;
 }
@@ -67,91 +324,66 @@ p:last-child {
 a {
     color: inherit;
     text-decoration: none;
-    font-size: 1.4rem;
-    padding: 1%;
+    border-bottom: 1px solid;
 }
 
 a:hover {
-    color: #ffbe00;
+    color: #FFBE00;
 }
 
-.featured-text          { color: #ffbe00; }
-.white-text             { color: white; }
-
-.small-text             { font-size: 1.5rem; }
-.medium-text            {
-    font-size: 1.7rem;
-    line-height: 1.1;
+.font-weight-light {
+    font-weight: 200;
 }
-.big-text               { font-size: 4.5rem; }
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-extra-bold {
+    font-weight: 800;
+}
+
+.text-left {
+    text-align: left
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.featured-text {
+    color: #FFBE00;
+}
+
+.white-text {
+    color: white;
+}
+
+.small-text {
+    font-size: 1.5rem;
+}
+
+.medium-text {
+    font-size: 2rem;
+}
+
+.big-text {
+    font-size: 4.5rem;
+}
 
 .subtitle {
     font-size: 1.2rem;
-    color:  rgb(120,120,125);
-}
-
-.quote-icon {
-    font-size: 6rem;
-    display: inline-block;
-    color:  rgb(120,120,125);
-    line-height: 1;
-}
-
-.font-weight-light      { font-weight: 200; }
-.font-weight-normal     { font-weight: normal; }
-.font-weight-extra-bold { font-weight: 800; }
-
-.text-left      { text-align: left; }
-.text-center    { text-align: center; }
-.text-right     { text-align: right; }
-
-
-/* header & footer styles */
-
-header {
-    background-image: url('images/1.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-header h3 {
-    font-size: 5.5rem;
-    line-height: 1;
-}
-
-.logo {
-    margin-top: 1.3%;
-    padding-left: 4%;
-}
-
-.category {
-    padding-right: 4%;
-    margin-top: 0%;
-    border-bottom: none;
-}
-
-footer a {
-    border: none;
-
-}
-
-/* background images */
-
-.bg-bed {
-    background-image: url(images/2.jpg);
-}
-.bg-pug {
-    background-image: url(images/4.jpg);
-    background-position: 100% 20%;
-}
-.bg-pillow {
-    background-image: url(images/3.jpg);
-    background-position: 100% 51%;
+    color: rgb(120, 120, 125);
 }
 
 
-/* icon grid */
-.fas {
+/*  Font Awesome Icons --------------------  */
+.fas,
+.fab {
     display: block;
     text-align: center;
     margin-bottom: 2rem;
@@ -159,47 +391,286 @@ footer a {
 }
 
 
-/* SM - max-width in pixels approximately 768px */
-@media(max-width: 48em) {
+/*  Header & Footer styles --------------------  */
+
+header {
+    background-image: url('/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2% 5%;
+}
+
+header h3 {
+    font-size: 5.5rem;
+    line-height: 1;
+}
+
+nav a {
+    padding: 0.5rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
+}
+
+footer a {
+    border: none;
+}
+
+
+/* Mobile Menu Styles */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.hamburger-button {
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+
+/*  Background Images --------------------  */
+
+.bg-bed {
+    background-image: url('/images/2.jpg')
+}
+
+.bg-pug {
+    background-image: url('/images/4.jpg');
+    background-position: 50% 35%;
+}
+
+.bg-pillow {
+    background-image: url('/images/3.jpg');
+    background-position: 50% 57%;
+}
+
+
+/* Image Gallery */
+
+.gallery [class*="col-"] {
+    padding: 0.5%;
+}
+
+.gallery .gallery-item {
+    border-bottom: none;
+}
+
+/* Background of gallery when active  */
+.lg-backdrop {
+    background-color: rgb(20, 20, 20);
+}
+
+.lg-backdrop.in {
+    opacity: 0.95;
+}
+
+.lg-sub-html {
+    background-color: rgba(20, 20, 20, 0.95);
+}
+
+
+/* Buttons & Forms --------------------  */
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #FFBE00;
+    outline: none;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #FFBE00;
+    appearance: none;
+    border: 2px solid #FFBE00;
+    color: inherit;
+}
+
+/* Testimonial Block -------------------- */
+
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: rgb(120, 120, 125);
+    line-height: 1;
+}
+
+
+
+
+
+
+
+
+
+/* General CSS  Respondive Styles (Apply everywhere unless overrided) */
+
+.show-xs,
+.show-sm,
+.show-md,
+.mobile-menu {
+    display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media(max-width:64em) {
+
+    .show-md {
+        display: block;
+    }
+
+    .hide-md {
+        display: none;
+    }
+
+    .md-tall-80 {
+        min-height: 80vh;
+    }
+
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */
+
+
+@media(max-width:48em) {
+
+    html {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .show-sm {
+        display: block;
+    }
 
     .hide-sm {
         display: none;
     }
 
-    .hide-sm-bt {
-        margin-bottom: 1rem;
-    }
-
-    .mt {
-        margin-top: 1rem;
-    }
-
-    .mb {
-        margin-bottom: 6rem;
-    }
-
-    .tall-sm {
-        min-height: 45vh;
-    }
-
-    .center-sm {
+    .sm-text-center {
         text-align: center;
     }
 
-    .center-sm-img {
-        margin: 0 auto;
-        margin-bottom: 0.8rem;
+    .sm-text-left {
+        text-align: left;
+    }
+
+    .sm-text-right {
+        text-align: right;
+    }
+
+    .sm-padded {
+        padding: 5%;
+    }
+
+    .sm-padded-1 {
+        padding: 1rem;
+    }
+
+    .sm-padded-05 {
+        padding: 0.5rem
+    }
+
+    .sm-padded-t-0 {
+        padding-top: 0;
+    }
+
+    .sm-padded-b-0 {
+        padding-bottom: 0;
+    }
+
+    .sm-margin-l-0 {
+        padding-left: 0;
+    }
+
+    .sm-margin-r-0 {
+        padding-right: 0;
+    }
+
+    .logo h2 {
+        font-size: 2rem;
+    }
+
+    header h3 {
+        font-size: 11vw;
+    }
+
+
+
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media(max-width:36em) {
+
+    .show-xs {
         display: block;
     }
 
-    .font-sm {
-        font-weight: 300;
-        line-height: 1.3;
-        margin-bottom: 0.8rem;
-        font-size: 1rem;
+    .hide-xs {
+        display: none;
     }
 
-    .flex-flip-sm {
-        flex-direction: column-reverse;
+    h1 {
+        font-size: 1.4rem;
+        line-height: 1.1;
     }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ------- XXS Media Query (25em / 400px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media(max-width:25em) {
+
+    html {
+        font-size: 12px;
+    }
+
+    [class*="grid"] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
 }

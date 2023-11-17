@@ -1,0 +1,141 @@
+---
+layout: default
+cards:
+- heading: Small Heading
+  description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestias recusandae architecto voluptates, reiciendis repudiandae quisquam blanditiis quia.
+  featured_image: /images/1.jpg
+- heading: Small Heading
+  description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestias recusandae architecto voluptates, reiciendis repudiandae quisquam blanditiis quia.
+  featured_image: /images/3.jpg
+- heading: Small Heading
+  description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos molestias recusandae architecto voluptates, reiciendis repudiandae quisquam blanditiis quia.
+  featured_image: /images/2.jpg
+---
+
+<!--------------- Header Banner ------------------->
+<header class="grid tall-60">
+  {% include header-nav.html %}
+  <div class="col-12-middle text-center">
+    <h3 class="font-weight-extra-bold editable">
+      <span class="featured-text"> addictively</span> soft
+    </h3>
+    <h1 class="font-weight-light editable">
+      you won't want to get out of bed
+    </h1>
+  </div>
+</header>
+
+<!-- Text grid sustainability -->
+
+<section class="padded grid bg-featured">
+  <div class="padded-sm col-12 text-center">
+    <h2> <span class="white-text">features</span> you will love </h2>
+  </div>
+  <div class="padded-sm col-3 editable">
+    <h3> little heading </h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae
+      praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio?
+    </p>
+  </div>
+  <div class="col-3 padded-sm editable">
+
+    <h3> little heading </h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae
+      praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio?
+    </p>
+  </div>
+  <div class="padded-sm col-3 editable">
+    <h3> little heading </h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae
+      praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio?
+    </p>
+  </div>
+  <div class="padded-sm col-3 editable">
+    <h3> little heading </h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto incidunt vero et praesentium. Possimus quae
+      praesentium eaque eius et id odit saepe repellat delectus, suscipit nobis facilis voluptatibus odio distinctio?
+    </p>
+  </div>
+</section>
+
+<!-- Cards  -->
+<section class="grid padded">
+
+  {% for item in page.cards %}
+
+  <div class="col-4 padded-sm">
+    <div class="card">
+      <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"> </div>
+      <div class="padded-1">
+        <h3> {{item.heading}} </h3>
+        <p> {{item.description}} </p>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+
+</section>
+
+
+
+
+
+<!-----------------  Image banner   ----------------->
+<section class="padded text-center bg-dark tall-70 grid ">
+  <div class="col-12-middle">
+    <h3 class="big-text">
+      <span class="small-text font-weight-normal">spend over $150 and activate </span>
+      <br /><span class="featured-text">free</span> express shipping
+    </h3>
+  </div>
+</section>
+
+
+
+<!----------------- Gallery / about Section  ----------------->
+<section class="grid">
+  <div class="padded col-6-middle">
+    <h2 class="editable">
+      build to last a <span class="featured-text">lifetime</span>
+    </h2>
+    <p class="editable">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non <strong>quod deleniti
+      </strong>a aspernatur minima veritatis ipsa obcaecati reprehenderit.
+    </p>
+    <p class="editable">
+      Lorem ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Similique totam aperiam deleniti esse quae at <a
+        href="https://www.google.com">asperiores, ab delectus</a> quis, dolore enim a laudantium sunt officia natus
+      neque perferendis ipsam iusto.
+    </p>
+  </div>
+  <div class="bg-image  bg-bed col-6 tall-70">
+    <!-- background image bed  -->
+  </div>
+  <div class="bg-image bg-pug col-6 tall-70">
+    <!-- background image pug sleeping  -->
+  </div>
+  <div class="padded col-6-middle editable">
+    <h2> so <span class="featured-text">soft</span> you'll melt </h2>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non quod deleniti a aspernatur
+      minima veritatis ipsa obcaecati reprehenderit, tempore ad voluptatum temporibus iure dolorem provident
+      necessitatibus ratione! </p>
+  </div>
+  <div class="padded col-6-middle">
+    <h2 class="editable">
+      build to last a <span class="featured-text">lifetime</span>
+    </h2>
+    <p class="editable">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque modi non <strong>quod deleniti
+      </strong>a aspernatur minima veritatis ipsa obcaecati reprehenderit.
+    </p>
+    <p class="editable">
+      Lorem ipsum dolor sit <em>amet</em> consectetur adipisicing elit. Similique totam aperiam deleniti esse quae at <a
+        href="https://www.google.com">asperiores, ab delectus</a> quis, dolore enim a laudantium sunt officia natus
+      neque perferendis ipsam iusto.
+    </p>
+  </div>
+  <div class="bg-image  bg-bed col-6 tall-70">
+    <!-- background image bed  -->
+  </div>
+</section>
