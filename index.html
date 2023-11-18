@@ -1,6 +1,15 @@
 ---
 layout: default
 banner-image: images/1.jpg
+featured:
+ - icon: fab fa-pagelines
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci!
+ - icon: fas fa-apple-alt
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci!
+ - icon: fas fa-carrot
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci!
+ - icon: fas fa-pizza-slice
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci!
 seo:
 title: The Sleep Co
 description: images/1.jpg
@@ -46,26 +55,18 @@ hide-from-google: false
 
         <!------------ feature icon grid ------------>
 
-        <section class="padded grid bg-dark hide-sm">
+        <section class="padded grid-center bg-dark hide-sm">
             <div class="padded-sm md:col-12 text-center">
                 <h2> <span class="featured-text"> features</span> you will love </h2>
             </div>
+
+            {% for item in page.featured %}
             <div class="padded-sm md:col-3 editable">
-                <i class="fas fa-solid fa-cloud"></i>
-                <p class>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci!</p>
+                <i class="{{ item.icon }}"></i>
+                <p> {{ item.description }} </p>
             </div>
-            <div class="padded-sm md:col-3 editable">
-                <i class="fas fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, non voluptatem eum corrupti explicabo, aperiam esse totam nam doloremque nisi magnam error nulla illo ex. Sapiente nisi in temporibus repellat.</p>
-            </div>
-            <div class="padded-sm md:col-3 editable">
-                <i class="fas fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, non voluptatem eum corrupti explicabo, aperiam esse totam nam doloremque nisi magnam error nulla illo ex. Sapiente nisi in temporibus repellat.</p>
-            </div>
-            <div class="padded-sm md:col-3 editable">
-                <i class="fas fa-solid fa-cloud"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, non voluptatem eum corrupti explicabo, aperiam esse totam nam doloremque nisi magnam error nulla illo ex. Sapiente nisi in temporibus repellat.</p>
-            </div>
+            {% endfor %}
+
         </section>
 
 
