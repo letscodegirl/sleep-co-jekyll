@@ -1,31 +1,78 @@
 ---
 layout: default
+gallery:
+  - column-size: col-6
+    aspect-ratio: square
+    background-image: /images/1.jpg
+  - column-size: col-6
+    aspect-ratio: square
+    background-image: /images/3.jpg
+  - column-size: col-12
+    aspect-ratio: landscape
+    background-image: /images/2.jpg
+  - column-size: col-4
+    aspect-ratio: landscape
+    background-image: /images/4.jpg
+  - column-size: col-4
+    aspect-ratio: landscape
+    background-image: /images/3.jpg
+  - column-size: col-4
+    aspect-ratio: landscape
+    background-image: /images/2.jpg
 ---
 
-<!-- -------- Header Banner ---------->
-<header class="grid tall-100 md-tall-80" style="background-image:url('{{page.banner-image}}')">
-  <div class="header-nav col-12-top grid">
-    <div class="col-5_sm-12-middle sm-padded-b-0 logo">
-      <a href="/index.html" class="logo">
-        <h2> The Sleep Co </h2>
-      </a>
-    </div>
+<!-- header banner -->
 
-    <nav class="col-7_sm-12-middle text-right sm-text-center category">
-      <a href="/index.html"> Home </a>
-      <a href="/about.html"> About </a>
-      <a href="/products.html"> Products </a>
-      <a href="/gallery.html"> Gallery </a>
-      <a href="/contact.html"> Contact </a>
-    </nav>
+<header class="grid tall-100 md-tall-80"
+        style="background-image:url('{{ page.banner-image }}');">
 
-  </div>
+  {% include header-nav.html %}
+
   <div class="col-12 text-center">
-    <h3 class="font-weight-extra-bold editable">
-      <span class="featured-text"> sleep </span> like a baby
+    <h3 class="font-weight-extra-bold editable" data-aos="fade-in" data-aos-duration="1000">
+      <span class="featured-text"> explore </span> our world
     </h3>
-    <h1 class="font-weight-light editable">
+    <h1 class="font-weight-light editable" data-aos="fade-up" data-aos-delay="500">
       the ultimate mattress solution
     </h1>
   </div>
 </header>
+
+<section class="padded">
+
+  <div class="gallery grid">
+
+    {% for item in page.gallery %}
+    <div class="{{ item.column-size }}">
+      <div class="bg-image {{ item.aspect-ratio }}"
+           style="background-image: url('{{ item.background-image }}');">
+      </div>
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+  <!-- jekyll only works with html, not css -> inline-styles -->
+
+  <!-- <div class="gallery grid">
+    <div class="col-6">
+      <div class="bg-image square bg-img-1"></div>
+    </div>
+    <div class="col-6">
+      <div class="bg-image square bg-img-2 bg-pos-b"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-3"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-4"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall "></div>
+    </div>
+    <div class="col-12">
+      <div class="bg-image landscape bg-img-5"></div>
+    </div>
+  </div> -->
+</section>
