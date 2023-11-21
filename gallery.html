@@ -7,7 +7,7 @@ gallery:
   - column-size: col-6
     aspect-ratio: square
     background_image: /images/3.jpg
-  - column-size: col-3_sm-12
+  - column-size: col-12
     aspect-ratio: landscape
     background_image: /images/2.jpg
   - column-size: col-4
@@ -42,8 +42,7 @@ gallery:
 
     {% for item in page.gallery %}
     <div class="{{ item.column-size }}">
-      <div class="bg-image {{ item.aspect-ratio }}"
-           style="background-image: url('{{ item.background_image }}');">
+      <div class="bg-image {{ item.aspect-ratio }}" style="background-image: url('{{ item.background-image }}');">
       </div>
     </div>
 
