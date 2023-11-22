@@ -13,6 +13,11 @@ $(document).ready(function () {
     duration: 500 // values from 0 to 3000, with step 50ms
   });
 
+});
 
+
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  download: false
 
 });
