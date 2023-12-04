@@ -1,26 +1,32 @@
 ---
 layout: default
 popup-gallery: true
-gallery-background: Dark Background
+gallery-background: bg-dark
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/1.jpg
+    type: dog
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/3.jpg
+    type: dog
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /images/2.jpg
+    type: dog
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /images/4.jpg
+    type: cat
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /images/3.jpg
+    type: cat
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /images/2.jpg
+    type: cat
 ---
 <!-- header banner -->
 
@@ -41,19 +47,22 @@ gallery:
 {% if page.popup-gallery == true %}
 
 <!-- popup gallery -->
-<section class="padded
- {% if page.gallery-background == 'Dark Background' %} bg-dark {% endif %}">
+<section class="padded {{page.gallery-background}}">
 
   <h2> Popup Gallery </h2>
   <div class="gallery grid" id="lightgallery">
 
     {% for item in page.gallery %}
 
+    {% if item.type != 'dog' %}
+
     <a class="{{ item.column-size }} gallery-item" href="{{ item.background_image }}">
       <div class="bg-image {{ item.aspect-ratio }}"
            style="background-image: url('{{ item.background_image }}');">
       </div>
     </a>
+
+    {% endif %}
 
     {% endfor %}
 
@@ -81,7 +90,7 @@ gallery:
 {% else %}
 
 <!-- standard gallery -->
-  <section class="padded">
+  <section class="padded {{page.gallery-background}}">
 
   <h2> Standard Gallery </h2>
 
