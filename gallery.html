@@ -1,5 +1,7 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: Dark Background
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: square
@@ -36,7 +38,11 @@ gallery:
   </div>
 </header>
 
-<section class="padded">
+{% if page.popup-gallery == true %}
+
+<!-- popup gallery -->
+<section class="padded
+ {% if page.gallery-background == 'Dark Background' %} bg-dark {% endif %}">
 
   <h2> Popup Gallery </h2>
   <div class="gallery grid" id="lightgallery">
@@ -53,7 +59,7 @@ gallery:
 
   </div>
 
-  <div class="gallery grid" id="lightgallery-2">
+  <!-- <div class="gallery grid" id="lightgallery-2">
 
     <a class="button" href="/images/1.jpg" title="Funny dog 1">
       View Our Work
@@ -65,13 +71,16 @@ gallery:
     <a href="/images/2.jpg" title="Funny dog 6"> </a>
     <a href="/images/3.jpg" title="Funny dog 7"> </a>
 
-  </div>
+  </div> -->
 
 <!-- https://www.lightgalleryjs.com/docs/settings/ -->
 <!-- getCaptionFromTitleOrAlt true -->
 
-  </section>
+</section>
 
+{% else %}
+
+<!-- standard gallery -->
   <section class="padded">
 
   <h2> Standard Gallery </h2>
@@ -110,4 +119,6 @@ gallery:
       <div class="bg-image landscape bg-img-5"></div>
     </div>
   </div> -->
-</section>
+  </section>
+
+{% endif %}
