@@ -4,67 +4,18 @@
     <!-- head of html where we add external sources and metadata-->
     <head>
 
-        <title> sleep like a baby </title>
-
-        <!-- this is our fontawesome icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- gridlex for our flexbox grids -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-        <!-- google font - catamaran (200,400,500,800) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;300;400;500;700;800&family=Work+Sans:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&display=swap" rel="stylesheet" />
-
-        <!-- animate on scroll -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-        <!-- light gallery for pop-ups -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css"
-        integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- this is our custom stylesheet -->
-        <link href="/style.css" rel="stylesheet" />
-
-
+        {% include head.html %}
+    <!-- head: metadata -->
 
     </head>
     <!-- this is the body where all of your pg content goes -->
     <body>
 
-
         {{ content }}
 
-         <!------------ footer ------------>
-         <footer class="padded md:grid-spaceBetween bg-dark center-sm">
-            <div class="md:col-4-bottom">
-                <h2 class="mb"> let's <br> <span class="featured-text">connect</span> </h2>
-                <p class="hide-sm center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ad? Iusto impedit, et fugit laborum eum reprehenderit ut nihil voluptatibus incidunt eius voluptates illo quo libero eveniet officia aliquam adipisci! </p>
-            </div>
-            <div class="md:col-5-bottom center-sm-img font-sm">
-                <p> Call:<a href="tel:#"> 04555 5555</a> </p>
-                <p> Email:<a href="mailto:#"> hello@thesleep.co</a> </p>
-                <p> Store: <a> 55 Main St, Chicago</a> </p>
-                <p> <strong>Instagram:</strong><a href="https://www.instagram.com/thesleepco"> @thesleepco </a></p>
-            </div>
-        </footer>
+        {% include site-footer.html %}
 
-        <!-- add jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <!-- animate on scroll -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-        <!-- light gallery for pop-ups -->
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
-
-        <!-- our custom javascript file -->
-        <script src="/scripts.js"></script>
-
-            <!-- order: jquery, any external tools like slickslider or popup gallery, own JS -->
+        {% include body-scripts.html %}
 
     </body>
     </html>
