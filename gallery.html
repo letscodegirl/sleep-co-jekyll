@@ -54,7 +54,9 @@ gallery:
 
     {% for item in page.gallery %}
 
-    {% if item.type != 'dog' %}
+    {% if item.type == 'dog' or item.type == 'cat' %}
+
+    <!-- != -->
 
     <a class="{{ item.column-size }} gallery-item" href="{{ item.background_image }}">
       <div class="bg-image {{ item.aspect-ratio }}"
